@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "listaEjemplos";
+}
+
+<h1>Lista De Ejemplos</h1>
+
+<ul>
+    @foreach(string ejemplos in Model)
+    {
+    <li>@ejemplos</li>
+    }
+</ul>
+@Html.ActionLink("Volver","Index")
+
